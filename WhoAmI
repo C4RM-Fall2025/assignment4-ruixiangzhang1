@@ -1,5 +1,0 @@
-
-# Identify yourself for grading
-
-def WhoAmI():
-    return('rz2791')
