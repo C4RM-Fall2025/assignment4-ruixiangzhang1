@@ -8,7 +8,6 @@ def getBondDuration(y, face, couponRate, m, ppy = 1):
     weighted_sum = 0 
     
     for t in range(1, periods + 1):
-        
         if t == periods:
             cash_flow = coupon_payment + face
         else:
@@ -18,10 +17,10 @@ def getBondDuration(y, face, couponRate, m, ppy = 1):
         pvcf = cash_flow * pv_factor
         
         bond_price += pvcf
-        
         weighted_sum += pvcf * t / ppy 
    
     bondDuration = weighted_sum / bond_price
 
     return bondDuration
+
 
